@@ -54,6 +54,7 @@ flutter:
   assets:
     - images/launcher_icon_coffee.png
     - images/welcome.png
+    - images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -20,11 +20,10 @@ class MyApp extends StatelessWidget {
                   Center(
                     child: Image.asset("images/plane.png"),
                   ),
+                  SizedBox(height: 30),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.coffee_rounded, color: Colors.white),
-                      SizedBox(width: 10),
                       Text(
                         "TRAVEL APP",
                         style: TextStyle(
@@ -37,59 +36,102 @@ class MyApp extends StatelessWidget {
                       ),
                     ],
                   ),
-                  OutlinedButton(
-                    onPressed: () {
-                      print('Stays');
-                    },
-                    child: Text('Stays'),
-                    style: OutlinedButton.styleFrom(
-                      side: BorderSide(
+                  SizedBox(height: 30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.location_city_outlined,
                         color: Colors.white,
-                        width: 2.0,
                       ),
-                      primary: Colors.white,
-                      minimumSize: Size(200, 40),
-                    ),
-                  ),
-                  OutlinedButton(
-                    onPressed: () {
-                      print('Flights');
-                    },
-                    child: Text('Flights'),
-                    style: OutlinedButton.styleFrom(
-                      side: BorderSide(
-                        color: Colors.white,
-                        width: 2.0,
+                      SizedBox(width: 5),
+                      OutlinedButton(
+                        onPressed: () {
+                          print('Stays');
+                        },
+                        child: Text('Stays'),
+                        style: OutlinedButton.styleFrom(
+                          side: BorderSide(
+                            color: Colors.white,
+                            width: 2.0,
+                          ),
+                          primary: Colors.white,
+                          minimumSize: Size(200, 40),
+                        ),
                       ),
-                      primary: Colors.white,
-                      minimumSize: Size(200, 40),
-                    ),
-                  ),
-                  OutlinedButton(
-                    onPressed: () {
-                      print('Cars');
-                    },
-                    child: Text('Cars'),
-                    style: OutlinedButton.styleFrom(
-                      side: BorderSide(
-                        color: Colors.white,
-                        width: 2.0,
-                      ),
-                      primary: Colors.white,
-                      minimumSize: Size(200, 40),
-                    ),
+                    ],
                   ),
                   SizedBox(height: 5),
-                  TextButton(
-                    onPressed: () {
-                      print('Register');
-                    },
-                    child: Text('All-Inclusive Vacations'),
-                    style: TextButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      primary: Colors.orange,
-                      minimumSize: Size(200, 40),
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.airplanemode_on,
+                        color: Colors.white,
+                      ),
+                      SizedBox(width: 5),
+                      OutlinedButton(
+                        onPressed: () {
+                          print('Flights');
+                        },
+                        child: Text('Flights'),
+                        style: OutlinedButton.styleFrom(
+                          side: BorderSide(
+                            color: Colors.white,
+                            width: 2.0,
+                          ),
+                          primary: Colors.white,
+                          minimumSize: Size(200, 40),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 5),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.car_rental_outlined,
+                        color: Colors.white,
+                      ),
+                      SizedBox(width: 5),
+                      OutlinedButton(
+                        onPressed: () {
+                          print('Cars');
+                        },
+                        child: Text('Cars'),
+                        style: OutlinedButton.styleFrom(
+                          side: BorderSide(
+                            color: Colors.white,
+                            width: 2.0,
+                          ),
+                          primary: Colors.white,
+                          minimumSize: Size(200, 40),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 5),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.beach_access_outlined,
+                        color: Colors.white,
+                      ),
+                      SizedBox(width: 5),
+                      TextButton(
+                        onPressed: () {
+                          print('All-Inclusive Vacations');
+                        },
+                        child: Text('All-Inclusive Vacations'),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          primary: Colors.pink,
+                          minimumSize: Size(200, 40),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
